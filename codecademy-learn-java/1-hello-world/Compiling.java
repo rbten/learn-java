@@ -6,6 +6,6 @@ public class Compiling {
     System.out.println("Java statements end with a semicolon.");
 
     System.out.println("Programming is... fun!");
-    
+    System.out.println("Programming is... fun!");
   }
 }
