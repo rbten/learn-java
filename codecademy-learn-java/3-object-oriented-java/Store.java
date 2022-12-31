@@ -1,6 +1,6 @@
 public class Store {
   // scope of Store class starts after curly brace
-
+  String productType;
   // new method: constructor!
   public Store() {
     System.out.println("I am inside the constructor method.");
