@@ -1,10 +1,11 @@
 public class Store {
   // scope of Store class starts after curly brace
   String productType;
+
   // new method: constructor!
-  public Store() {
-    System.out.println("I am inside the constructor method.");
-  }
+  public Store(String product) {
+    productType =product
+  } 
 
   public static void main(String[] args) {
     //  scope of main() starts after curly brace
