@@ -4,10 +4,16 @@ public class Store {
   int inventoryCount;
   double inventoryPrice;
 
-  // new method: constructor!
+  // constructor
   public Store(String product) {
     productType = product;
   } 
+
+  // advertise method
+  public void advertise() {
+    System.out.println("Come spend some money!");
+    System.out.println("Selling "+productType+"!");
+  }
 
   public Store(String product, int count, double price) {
     productType = product;
