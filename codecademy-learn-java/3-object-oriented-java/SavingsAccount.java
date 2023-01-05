@@ -1,38 +1,34 @@
-public class SavingsAccount {
-  int balance;
+public class SavingsAccount{
+  double balance;
 
-  public SavingsAccount(int inputBalance) {
+  // constructor
+  public SavingsAccount(double inputBalance){
     balance = inputBalance;
   }
 
-  public static void main(String[] args) {
+  // deposit method
+  public void deposit(double amountToDeposit){
+    double updateBalance = balance + amountToDeposit;
+    balance = updateBalance;
+  }
+
+  // withdrawing method
+  public void withdraw(double amountToWithdraw){
+    double updateBalance = balance - amountToWithdraw;
+    balance = updateBalance;
+  }
+
+  // check ballance method
+  public void checkBallance(){
+    System.out.println("Your account: "+balance);
+  }
+
+  public static void main(String[] args){
     SavingsAccount myBankAcc = new SavingsAccount(2000);
-
-    // Check account
-    System.out.println("Your balance: "+myBankAcc.balance);
-
-    // Withdrawing
-    int afterWithdraw = myBankAcc.balance-300;
-    myBankAcc.balance = afterWithdraw;
-    System.out.println("You just withdraw: "+300);
-
-    // Check account
-    System.out.println("Your balance: "+myBankAcc.balance);
-
-    // Deposit
-    int afterDeposit = myBankAcc.balance+600;
-    myBankAcc.balance = afterDeposit;
-    System.out.println("You just deposit: "+600);
-
-    // Check account
-    System.out.println("Your balance: "+myBankAcc.balance);
-
-    // Deposit
-    int afterDeposit2= myBankAcc.balance+600;
-    myBankAcc.balance = afterDeposit2;
-    System.out.println("You just deposit: "+600);
-
-    // Check account
-    System.out.println("Your balance: "+myBankAcc.balance);
+    myBankAcc.checkBallance();
+    myBankAcc.deposit(100);
+    myBankAcc.checkBallance();
+    myBankAcc.withdraw(200);
+    myBankAcc.checkBallance();
   }
 }
