@@ -1,3 +1,9 @@
+/**
+* A program can create a droid.
+* A droid has two states: name, batteryLevel.
+* The functions of program: Print a performing task and needed battery, exchange battery with another droid, check battery of a droid.
+*/
+
 public class Droid {
   // instance field
   String name;
