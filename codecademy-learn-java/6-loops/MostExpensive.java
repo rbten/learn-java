@@ -14,7 +14,9 @@ class MostExpensive {
     
     // Iterate over expenses
     for (double expense : expenses) {
-
+      if (expense > mostExpensive) {
+        mostExpensive = expense;
+      }
     }
     
     System.out.println(mostExpensive);
