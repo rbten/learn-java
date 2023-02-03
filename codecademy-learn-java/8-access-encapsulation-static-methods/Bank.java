@@ -10,8 +10,6 @@ public class Bank {
   public static void main(String[] args) {
     Bank bankOfGods = new Bank();
 
-    System.out.println(bankOfGods.accountOne.name);
-    bankOfGods.accountOne.addFunds(5);
-    bankOfGods.accountOne.getInfo();
+    System.out.println(bankOfGods.accountOne.getBalance());
   }
 }
