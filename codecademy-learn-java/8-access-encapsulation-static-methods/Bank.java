@@ -11,5 +11,7 @@ public class Bank {
     Bank bankOfGods = new Bank();
 
     System.out.println(bankOfGods.accountOne.getBalance());
+    bankOfGods.accountOne.setBalance(5000);
+    System.out.println(bankOfGods.accountOne.getBalance());
   }
 }

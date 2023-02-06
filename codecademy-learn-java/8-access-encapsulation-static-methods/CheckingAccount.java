@@ -20,6 +20,10 @@ public class CheckingAccount {
   public int getBalance() {
     return balance;
   }
+  
+  public void setBalance(int newBalance) {
+    balance = newBalance;
+  }
 
   public static void main(String[] args) {
     CheckingAccount myAccount = new CheckingAccount("Robert", 100, "3");
