@@ -1,10 +1,10 @@
-public class SavingsAccount{
+public class SavingAccount{
 
   public String owner;
   public int balanceDollar;
   public double balanceEuro;
 
-  public SavingsAccount(String owner, int balanceDollar){
+  public SavingAccount(String owner, int balanceDollar){
     // Complete the constructor
     this.owner = owner;
     this.balanceDollar = balanceDollar;
@@ -13,13 +13,16 @@ public class SavingsAccount{
 
   public void addMoney(int balanceDollar){
     // Complete this method
+    System.out.println("Adding " + balanceDollar + " dollars to the account.");
+    this.balanceDollar += balanceDollar;
+    System.out.println("The new balance is " + this.balanceDollar + " dollars.");
   }
 
   public static void main(String[] args){
-    SavingsAccount zeusSavingsAccount = new SavingsAccount("Zeus", 1000);
+    SavingAccount zeusSavingsAccount = new SavingAccount("Zeus", 1000);
 
     // Make a call to addMoney() to test your method
-
+    zeusSavingsAccount.addMoney(2000);
   }
 
 }
