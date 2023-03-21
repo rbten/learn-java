@@ -104,11 +104,11 @@ public class Lecture07String{
     // System.out.println(midFirst);
 
     // Tach chuoi
-    String s = "123;456;789";
-    String[] a = s.split(";");
-    for(String ans : a) {
-      System.out.println(ans);
-    }
+    // String s = "123;456;789";
+    // String[] a = s.split(";");
+    // for(String ans : a) {
+    //   System.out.println(ans);
+    // }
 
   }
 }
