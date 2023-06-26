@@ -6,5 +6,8 @@ public class BooleanAndLogicalOperations {
 
         System.out.println(open);   // true
         System.out.println(closed); // false
+
+        boolean f = false; // f is false
+        boolean t = !f;    // t is true 
     }
 }
