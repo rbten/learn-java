@@ -9,5 +9,10 @@ public class BooleanAndLogicalOperations {
 
         boolean f = false; // f is false
         boolean t = !f;    // t is true 
+
+        boolean b1 = false && false; // false
+        boolean b2 = false && true;  // false
+        boolean b3 = true && false;  // false
+        boolean b4 = true && true;   // true 
     }
 }
