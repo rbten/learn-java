@@ -1,6 +1,6 @@
 public class PhraseOMatic {
     public static void main(String[] args) {
-        String[] wordListOne = {"agnostic", "opinionated", "voice activated", "haptically driven", "extensible", "reactive", "agent based", "functional", "AI enabled", "strongly typed"};
+        String[] wordListOne = {"agnostic", "opinionated", "voice activated", "hectically driven", "extensible", "reactive", "agent based", "functional", "AI enabled", "strongly typed"};
 
         String[] wordListTwo = {"loosely coupled", "sig sigma", "asynchronous", "event driven", "pub-sub", "IoT", "cloud native", "service oriented", "containerized", "serverless"};
 
