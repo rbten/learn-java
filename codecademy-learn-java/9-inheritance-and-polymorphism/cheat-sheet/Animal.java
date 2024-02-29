@@ -1,11 +1,19 @@
-// Parent Class
+// Parent class
 class Animal {
-  // Animal class members
+  String sound;
+  Animal(String snd) {
+    this.sound = snd;
+  }
 }
 
-// Child Class
-class Dog extends Animal {
-  // Dog inherits traits from Animal 
-  
-  // additional Dog class members
+// Child class
+class Dog extends Animal { 
+  // super() method can act like the parent constructor inside the child class constructor.
+  Dog() {
+    super("woof");
+  } 
+  // alternatively, we can override the constructor completely by defining a new constructor.
+  Dog() {
+    this.sound = "woof";
+  }
 }
