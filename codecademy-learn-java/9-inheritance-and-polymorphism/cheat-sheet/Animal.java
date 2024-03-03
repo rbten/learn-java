@@ -14,11 +14,18 @@ class Animal {
     System.out.println("The animal greets you.");
   }
 
+  public void eating() {
+    System.out.println("The animal is eating.");
+  }
+
   public static void main(String[] args) {
     Animal animal1 = new Animal();
     Animal cat1 = new Cat();
     animal1.greeting();
     cat1.greeting();
+
+    Dog myDog = new Dog();
+    myDog.eating();
   }
 }
 
@@ -28,6 +35,11 @@ class Dog extends Animal {
   public Dog() {
     super("woof");
   } 
+
+  @Override
+  public void eating() {
+    System.out.println("The dog is eating.");
+  }
 }
 
 class Cat extends Animal {
