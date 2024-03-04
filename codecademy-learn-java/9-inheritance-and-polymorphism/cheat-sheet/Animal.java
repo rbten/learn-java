@@ -26,6 +26,20 @@ class Animal {
 
     Dog myDog = new Dog();
     myDog.eating();
+
+    Animal cat2, dog2, pig2;
+
+    cat1 = new Cat();
+    dog1 = new Dog();
+    pig1 = new Pig();
+
+    Animal[] animals = {cat1, dog1, pig1};
+
+    for (Animal animal : animals) {
+      
+      animal.sound();
+  
+    }
   }
 }
 
