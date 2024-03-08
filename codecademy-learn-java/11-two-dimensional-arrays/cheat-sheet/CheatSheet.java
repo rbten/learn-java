@@ -18,5 +18,27 @@ public class CheatSheet {
         int retrieved = arr[1][0];
 
         System.out.println(retrieved);
+
+        double[][] doubleValues = {
+                                    {1.5, 2.6, 3.7},
+                                    {7.5, 6.4, 5.3},
+                                    {9.8,  8.7, 7.6},
+                                    {3.6, 5.7, 7.8}
+                                    };
+
+        String[][] stringValues;
+        stringValues = new String[][] {
+            {"working", "with"},
+            {"2D", "arrays"},
+            {"is", "fun"}
+        };
+
+        System.out.println(doubleValues[2][0]);
+        System.out.println(stringValues[2][1]);
+        
+        doubleValues[2][0] = 1000.0;
+        System.out.println(doubleValues[2][0]);
+
+
     }
 }
