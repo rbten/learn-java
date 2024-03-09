@@ -39,6 +39,12 @@ public class CheatSheet {
         doubleValues[2][0] = 1000.0;
         System.out.println(doubleValues[2][0]);
 
+        for(int i = 0; i < stringValues.length; i++) {
+            for (int j = 0; j < stringValues[0].length; j++) {
+                System.out.println(stringValues[i][j]);
+            }
+        }
+
 
     }
 }
