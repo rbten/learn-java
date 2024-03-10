@@ -45,6 +45,11 @@ public class CheatSheet {
             }
         }
 
-
+        for (int i = 0; i < stringValues[0].length; i++) {
+            for (int j = 0; j < stringValues.length; j++) {
+                System.out.println(stringValues[j][i]);
+            }
+        }
+        
     }
 }
