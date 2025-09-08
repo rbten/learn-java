@@ -44,6 +44,7 @@ public class MyJavaApp {
         int num2 = 9;
         int userAnswer;
 
+        // define questions and answers
         String question1 = "What is " + num1 + " + " + num2 + "? ";
         int ansQuestion1 = 4 + 9;
         String question2 = "What is " + num1 + " - " + num2 + "? ";
