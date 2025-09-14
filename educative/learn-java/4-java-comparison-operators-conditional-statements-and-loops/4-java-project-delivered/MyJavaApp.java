@@ -52,8 +52,8 @@ public class MyJavaApp {
     }
 
     // method to bid farewell to the user and give them the result
-    public static void printFarewellMessage (String userName) {
-        String farewellMessage = "Thanks for taking the quiz, " + userName + "!";
+    public static void printFarewellMessage (String userName, int score) {
+        String farewellMessage = "Thanks for taking the quiz, " + userName + "! Your score is " + score + ".";
         System.out.println(farewellMessage);
     }
 
@@ -71,6 +71,8 @@ public class MyJavaApp {
         String op = "";
         int userAnswer = 0;
         int correctAnswer = 0;
+        int score = 0;
+        int totalQuestions = 0;
 
 
         // Take input from the user and save it to a variable
@@ -81,26 +83,37 @@ public class MyJavaApp {
         greetUser(userName);
 
 
+        while (totalQuestions < 5) {
+            // Random two numbers
+            num1 = random.nextInt(10) + 1;
+            num2 = random.nextInt(10) + 1;
 
-        // Question 1
-        num1 = random.nextInt(10) + 1;
-        num2 = random.nextInt(10) + 1;
+            // Choose operator
+            opNum = random.nextInt(4) + 1;
+            op = chooseOperator(opNum);
 
-        // Choose operator
-        opNum = random.nextInt(4) + 1;
-        op = chooseOperator(opNum);
+            // Print question
+            printQuestion(num1, num2, op);
+            userAnswer = scan.nextInt();
 
-        // Print question
-        printQuestion(num1, num2, op);
-        userAnswer = scan.nextInt();
+            // Calculate answer
+            correctAnswer = calculateAnswer(num1, num2, op);
 
-        // Calculate answer
-        correctAnswer = calculateAnswer(num1, num2, op);
-        System.out.println("The correct answer: " + correctAnswer);
+            // Compare the userAnswer and the correctAnswer and print the score
+            if (userAnswer == correctAnswer) {
+                score += 1;
+                System.out.println("=> Correct answer.");
+            } else {
+                System.out.println("=> Oops, that's not right.");
+                System.out.println("=> The correct answer: " + correctAnswer);
+            }
+
+            totalQuestions++;
+        }
 
 
         // Make a customized farewell message and print it
-        printFarewellMessage(userName);
+        printFarewellMessage(userName, score);
 
     }
 }
