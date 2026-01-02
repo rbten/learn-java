@@ -1,0 +1,22 @@
+class Solution {
+    private int countDigits(int x) {
+        int count = 0;
+        while (x > 0) {
+            x /= 10;
+            count++;
+        }
+
+        return count;
+    }
+
+    public int findNumbers(int[] nums) {
+        int count = 0;
+        for (int i : nums) {
+            if (countDigits(i) % 2 == 0) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+}
