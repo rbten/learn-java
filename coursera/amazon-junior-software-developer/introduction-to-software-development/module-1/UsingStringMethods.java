@@ -30,5 +30,13 @@ public class UsingStringMethods {
         System.out.println("The fruit converted to uppercase: \"" + fruitInUpperCase + "\"");
         System.out.println("The fruit converted to lowercase: \"" + fruitInLowerCase + "\"");
         
+        boolean hasAna = fruit.contains("ana");
+        System.out.println(fruit + " contains the substring \"ana\": " + hasAna);
+        boolean hasAba = fruit.contains("aba");
+        System.out.println(fruit + " has \"aba\" : "+ hasAba);
+
+        String newFruit = fruit.replace("n", "ck");
+        System.out.println("The new fruit: " + newFruit);
+
     } 
 }
