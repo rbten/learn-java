@@ -32,13 +32,31 @@ public class WritingConditionalStatements {
 
 //--
 
-        int moneyLeftWithToni = 300;
+        // int moneyLeftWithToni = 300;
+
+        // if (moneyLeftWithToni >= 300) {
+        //     System.out.println("Go to Las Vegas");
+        // }
+
+        // System.out.println("On trip to parents.");
+
+//--
+
+        int moneyLeftWithToni = 100;
 
         if (moneyLeftWithToni >= 300) {
             System.out.println("Go to Las Vegas");
+            System.out.println("Enjoy some luck games");
+            System.out.println("Enjoy some concerts");
+            System.out.println("Enjoy fine dining");
+            System.out.println("Go on a helicopter ride");
+            System.out.println("Go shop for some souvenirs");
+        } else {
+            System.out.println("Think about the money spent");
         }
 
         System.out.println("On trip to parents.");
+
 
 
 
